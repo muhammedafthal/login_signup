@@ -5,7 +5,7 @@ const { Error } = require('mongoose');
 
 //@desc Get all contacts
 //route GET /api/contacts
-//@access public
+//@access pic
 const getContacts = asyncHandler(async (req, res) => {
     const contacts = await Contact.find();
     res.status(200).json(contacts).res.send(req.body);
